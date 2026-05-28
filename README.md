@@ -24,3 +24,8 @@ graphbit_core/
 - **Target System:** NVIDIA Jetson Orin Nano (8GB Shared VRAM/RAM profile)
 - **Power Envelope:** 15W Balanced Performance Mode (`sudo nvpmodel -m 2`)
 - **Thermal Baseline:** Sustained 56.4°C via 100% Active PWM override
+
+### 🛡️ Adversarial Stress Testing & Governance
+Relying on base model alignment is an enterprise anti pattern. To validate system boundaries, this framework undergoes automated security verification using a surgically abliterated open source model. System compliance is strictly enforced at the routing and orchestration layers. 
+
+For the comprehensive technical breakdown including latency, cost optimization, and human fallback thresholds, read the [Adversarial Harness EPIC Specification](docs/architecture/adversarial-harness-epic.md).
