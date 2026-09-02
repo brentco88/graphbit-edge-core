@@ -1,0 +1,35 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:6c3e9812-3294-4d2b-9801-brentco88-graphbit",
+  "version": 1,
+  "metadata": {
+    "component": {
+      "type": "application",
+      "name": "graphbit-edge-core",
+      "version": "1.0.0",
+      "description": "Hybrid Edge Agentic Orchestration Engine with Dynamic Authority Reversal"
+    }
+  },
+  "components": [
+    {
+      "type": "machine-learning-model",
+      "name": "Qwen2.5-Instruct",
+      "version": "3B-Q4_K_M",
+      "properties": [
+        {"name": "context_window", "value": "1024"},
+        {"name": "hardware_target", "value": "NVIDIA Jetson Orin Nano 8GB"},
+        {"name": "owasp_llm_top10_mitigation", "value": "LLM01:PromptInjection, LLM06:SensitiveInformationDisclosure"}
+      ]
+    },
+    {
+      "type": "data",
+      "name": "PostgreSQL Binary Checkpointer",
+      "version": "14-JSONB",
+      "properties": [
+        {"name": "encryption", "value": "Local Unix Socket / AES NVMe"},
+        {"name": "drift_prevention", "value": "Slime Mold Negative Vector Stigmergy"}
+      ]
+    }
+  ]
+}
