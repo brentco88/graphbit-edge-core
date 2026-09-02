@@ -1,1 +1,9 @@
-/target
+# Exclude model binaries and local state databases
+*.gguf
+*.bin
+*.db
+*.swap
+/build/
+/target/
+__pycache__/
+.env
